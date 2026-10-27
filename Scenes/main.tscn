@@ -1,0 +1,372 @@
+[gd_scene load_steps=3 format=3 uid="uid://vajtt33nr5ju"]
+
+[ext_resource type="Script" path="res://Scenes/main.gd" id="1_xfe0n"]
+
+[sub_resource type="Theme" id="Theme_i66qd"]
+
+[node name="Main" type="Control"]
+layout_mode = 3
+anchors_preset = 15
+anchor_right = 1.0
+anchor_bottom = 1.0
+grow_horizontal = 2
+grow_vertical = 2
+script = ExtResource("1_xfe0n")
+
+[node name="ColorRect" type="ColorRect" parent="."]
+layout_mode = 1
+anchors_preset = 15
+anchor_right = 1.0
+anchor_bottom = 1.0
+grow_horizontal = 2
+grow_vertical = 2
+color = Color(0.190618, 0.448801, 0.716761, 1)
+
+[node name="Title" type="RichTextLabel" parent="."]
+layout_mode = 0
+offset_left = 133.0
+offset_top = 28.0
+offset_right = 1047.0
+offset_bottom = 121.0
+theme_override_font_sizes/normal_font_size = 56
+text = "Starbound Racial Traits Editor"
+
+[node name="ChooseRace" type="RichTextLabel" parent="."]
+layout_mode = 0
+offset_left = 65.0
+offset_top = 128.0
+offset_right = 199.0
+offset_bottom = 160.0
+text = "Choose Race"
+
+[node name="RaceMenu" type="OptionButton" parent="."]
+layout_mode = 0
+offset_left = 193.0
+offset_top = 133.0
+offset_right = 294.0
+offset_bottom = 153.0
+item_count = 1
+popup/item_0/id = 1
+
+[node name="MaxHealth" type="RichTextLabel" parent="."]
+layout_mode = 0
+offset_left = 507.0
+offset_top = 211.0
+offset_right = 613.0
+offset_bottom = 241.0
+text = "Max Health"
+
+[node name="Tip" type="RichTextLabel" parent="."]
+layout_mode = 0
+offset_left = 4.0
+offset_top = 164.0
+offset_right = 568.0
+offset_bottom = 186.0
+theme_override_font_sizes/normal_font_size = 10
+text = "( Hold Control & Click to select multiple abilities. Colourful glow: Nostos, Indix, Murder Drone, Worker Drone only. )"
+
+[node name="FireResist" type="RichTextLabel" parent="."]
+layout_mode = 0
+offset_left = 776.0
+offset_top = 211.0
+offset_right = 882.0
+offset_bottom = 241.0
+text = "Fire Resist"
+
+[node name="Immune" type="RichTextLabel" parent="."]
+layout_mode = 0
+offset_left = 1017.0
+offset_top = 171.0
+offset_right = 1123.0
+offset_bottom = 201.0
+bbcode_enabled = true
+text = "[b][u]Immune?"
+
+[node name="ElectricResist" type="RichTextLabel" parent="."]
+layout_mode = 0
+offset_left = 776.0
+offset_top = 260.0
+offset_right = 903.0
+offset_bottom = 290.0
+text = "Electric Resist"
+
+[node name="PoisonResist" type="RichTextLabel" parent="."]
+layout_mode = 0
+offset_left = 776.0
+offset_top = 310.0
+offset_right = 882.0
+offset_bottom = 340.0
+text = "Poison Resist"
+
+[node name="IceResist" type="RichTextLabel" parent="."]
+layout_mode = 0
+offset_left = 776.0
+offset_top = 361.0
+offset_right = 882.0
+offset_bottom = 391.0
+text = "Ice Resist"
+
+[node name="PhysicalResist" type="RichTextLabel" parent="."]
+layout_mode = 0
+offset_left = 776.0
+offset_top = 409.0
+offset_right = 901.0
+offset_bottom = 439.0
+text = "Physical Resist"
+
+[node name="MaxEnergy" type="RichTextLabel" parent="."]
+layout_mode = 0
+offset_left = 507.0
+offset_top = 260.0
+offset_right = 613.0
+offset_bottom = 290.0
+text = "Max Energy"
+
+[node name="EnergyRegen" type="RichTextLabel" parent="."]
+layout_mode = 0
+offset_left = 507.0
+offset_top = 315.0
+offset_right = 613.0
+offset_bottom = 345.0
+text = "Energy Regen"
+
+[node name="Attack" type="RichTextLabel" parent="."]
+layout_mode = 0
+offset_left = 507.0
+offset_top = 363.0
+offset_right = 613.0
+offset_bottom = 393.0
+text = "Attack Mult."
+
+[node name="Defense" type="RichTextLabel" parent="."]
+layout_mode = 0
+offset_left = 507.0
+offset_top = 414.0
+offset_right = 613.0
+offset_bottom = 444.0
+text = "Defense"
+
+[node name="Jump" type="RichTextLabel" parent="."]
+layout_mode = 0
+offset_left = 507.0
+offset_top = 455.0
+offset_right = 613.0
+offset_bottom = 485.0
+text = "Jump"
+
+[node name="HealthValue" type="OptionButton" parent="."]
+layout_mode = 0
+offset_left = 622.0
+offset_top = 210.0
+offset_right = 691.0
+offset_bottom = 230.0
+
+[node name="FireValue" type="OptionButton" parent="."]
+layout_mode = 0
+offset_left = 905.0
+offset_top = 212.0
+offset_right = 974.0
+offset_bottom = 232.0
+
+[node name="ElectricValue" type="OptionButton" parent="."]
+layout_mode = 0
+offset_left = 905.0
+offset_top = 260.0
+offset_right = 974.0
+offset_bottom = 280.0
+
+[node name="PoisonValue" type="OptionButton" parent="."]
+layout_mode = 0
+offset_left = 905.0
+offset_top = 308.0
+offset_right = 974.0
+offset_bottom = 328.0
+
+[node name="IceValue" type="OptionButton" parent="."]
+layout_mode = 0
+offset_left = 905.0
+offset_top = 358.0
+offset_right = 974.0
+offset_bottom = 378.0
+
+[node name="PhysicalValue" type="OptionButton" parent="."]
+layout_mode = 0
+offset_left = 905.0
+offset_top = 404.0
+offset_right = 974.0
+offset_bottom = 424.0
+
+[node name="EnergyValue" type="OptionButton" parent="."]
+layout_mode = 0
+offset_left = 622.0
+offset_top = 259.0
+offset_right = 691.0
+offset_bottom = 279.0
+
+[node name="EnergyRegenValue" type="OptionButton" parent="."]
+layout_mode = 0
+offset_left = 622.0
+offset_top = 312.0
+offset_right = 691.0
+offset_bottom = 332.0
+
+[node name="AttackMultValue" type="OptionButton" parent="."]
+layout_mode = 0
+offset_left = 622.0
+offset_top = 360.0
+offset_right = 691.0
+offset_bottom = 380.0
+
+[node name="DefenseValue" type="OptionButton" parent="."]
+layout_mode = 0
+offset_left = 622.0
+offset_top = 413.0
+offset_right = 691.0
+offset_bottom = 433.0
+
+[node name="JumpValue" type="OptionButton" parent="."]
+layout_mode = 0
+offset_left = 622.0
+offset_top = 457.0
+offset_right = 691.0
+offset_bottom = 477.0
+
+[node name="FireImune" type="CheckBox" parent="."]
+layout_mode = 0
+offset_left = 1040.0
+offset_top = 211.0
+offset_right = 1064.0
+offset_bottom = 235.0
+theme = SubResource("Theme_i66qd")
+
+[node name="ElectricImmune" type="CheckBox" parent="."]
+layout_mode = 0
+offset_left = 1040.0
+offset_top = 262.0
+offset_right = 1064.0
+offset_bottom = 286.0
+
+[node name="PoisonImmune" type="CheckBox" parent="."]
+layout_mode = 0
+offset_left = 1040.0
+offset_top = 309.0
+offset_right = 1064.0
+offset_bottom = 333.0
+
+[node name="IceImmune" type="CheckBox" parent="."]
+layout_mode = 0
+offset_left = 1040.0
+offset_top = 361.0
+offset_right = 1064.0
+offset_bottom = 385.0
+
+[node name="PhysicalImmune" type="CheckBox" parent="."]
+layout_mode = 0
+offset_left = 1040.0
+offset_top = 408.0
+offset_right = 1064.0
+offset_bottom = 432.0
+
+[node name="Generate" type="Button" parent="."]
+layout_mode = 0
+offset_left = 800.0
+offset_top = 598.0
+offset_right = 880.0
+offset_bottom = 629.0
+text = "Generate"
+
+[node name="AbilityList" type="ItemList" parent="."]
+layout_mode = 0
+offset_left = 11.0
+offset_top = 181.0
+offset_right = 487.0
+offset_bottom = 635.0
+focus_mode = 0
+theme_override_constants/v_separation = 9
+theme_override_constants/h_separation = 67
+theme_override_font_sizes/font_size = 12
+select_mode = 1
+allow_search = false
+item_count = 33
+max_columns = 2
+same_column_width = true
+item_0/text = "Day Regen"
+item_1/text = "Night Regen"
+item_2/text = "Regen (Out of Combat)"
+item_3/text = "Regen"
+item_4/text = "Water Regen"
+item_5/text = "Slime Regen"
+item_6/text = "Rage"
+item_7/text = "Combat Rage"
+item_8/text = "Defensive Combat"
+item_9/text = "Swim Boost (Alt)"
+item_10/text = "Swim Boost"
+item_11/text = "Slow Simmer"
+item_12/text = "Underwater Breathing"
+item_13/text = "Suffocate Instatly"
+item_14/text = "Liquid Vulnerability"
+item_15/text = "Liquid Immunity"
+item_16/text = "Avid Explorer"
+item_17/text = "Subterranean"
+item_18/text = "Nomadic"
+item_19/text = "Don't Starve"
+item_20/text = "Head Light"
+item_21/text = "Light (Low Grav)"
+item_22/text = "Glow"
+item_23/text = "Colourful Glow"
+item_24/text = "Ghostly Glow"
+item_25/text = "Nova"
+item_26/text = "Colourful Nova"
+item_27/text = "Fire Aura"
+item_28/text = "Ice Aura"
+item_29/text = "Electric Aura"
+item_30/text = "Poison Aura"
+item_31/text = "Acid Blood"
+item_32/text = "Explosive Death"
+
+[node name="Close" type="Button" parent="."]
+layout_mode = 0
+offset_left = 1050.0
+offset_top = 598.0
+offset_right = 1100.0
+offset_bottom = 629.0
+text = "Close"
+
+[node name="Button" type="Button" parent="."]
+layout_mode = 0
+offset_left = 917.0
+offset_top = 599.0
+offset_right = 1020.0
+offset_bottom = 630.0
+text = "Open Folder"
+
+[node name="Instructions" type="Button" parent="."]
+layout_mode = 0
+offset_left = 671.0
+offset_top = 598.0
+offset_right = 772.0
+offset_bottom = 629.0
+text = "Instructions"
+
+[node name="AcceptDialog" type="AcceptDialog" parent="."]
+title = "INSTRUCTIONS"
+position = Vector2i(125, 190)
+size = Vector2i(938, 314)
+dialog_text = "
+1) Choose your race
+2) Set your stats. These are percentage based, so choosing 10 gives you 10% bonus. Choosing -10 gives you -10% penalty
+3) Check any elemental immunities you want
+4) Choose any special traits you want. Hold control and click on each one for multiple traits.
+5) Click Generate to generate the mod
+6) Click  Open Folder to open the folder the mods are generated to. Your mod should have the species name + Traits
+7) Move that entire SpeciesTraits folder over to your Starbound mod folder.
+
+
+"
+
+[connection signal="pressed" from="Generate" to="." method="_on_generate_pressed"]
+[connection signal="pressed" from="Close" to="." method="_on_close_pressed"]
+[connection signal="pressed" from="Button" to="." method="_on_button_pressed"]
+[connection signal="pressed" from="Instructions" to="." method="_on_instructions_pressed"]
+[connection signal="canceled" from="AcceptDialog" to="." method="_on_accept_dialog_canceled"]
+[connection signal="confirmed" from="AcceptDialog" to="." method="_on_accept_dialog_confirmed"]
